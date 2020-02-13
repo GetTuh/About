@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Router, Switch } from 'react-router-dom';
+import AnimatedMainSwitch from './components/AnimatedMainSwitch'
 const App = ()=>(
   <div>
-    <Header/>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <AnimatedMainSwitch/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"/>
   </div>
 )
 
