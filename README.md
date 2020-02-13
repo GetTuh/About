@@ -1,1 +1,1 @@
-# [Strona osobista](https://gettuh.github.io/About/)
+# [Strona o mnie](https://gettuh.github.io/About/)
