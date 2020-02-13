@@ -40,9 +40,5 @@
   "devDependencies": {
     "gh-pages": "^2.2.0"
   },
-<<<<<<< HEAD
   "homepage": "https://gettuh.github.io/About/"
-=======
-  "homepage": "https://gettuh.github.io/"
->>>>>>> be1c333772d6add28d82a791644978dc6f65d370
 }
