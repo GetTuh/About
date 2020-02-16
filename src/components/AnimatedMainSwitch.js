@@ -6,7 +6,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 
 
 const A = ()=>(
-  <div className="display-1"><Link to='B'>A</Link></div>
+  <div className="display-1"><Link to='/b'>A</Link></div>
 )
 const B = ()=>(
   <div className="display-1">B</div>
