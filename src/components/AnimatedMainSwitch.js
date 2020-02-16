@@ -1,12 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {mapStyles, bounceTransition} from './mainRouterTransition'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+import {mapStyles, bounceTransition} from '../animations/mainRouterTransition'
 import { AnimatedSwitch } from 'react-router-transition';
 import welcomeScreen from './welcomeScreen'
 
 
 const A = ()=>(
-  <div className="display-1">A</div>
+  <div className="display-1"><Link to='/b'>A</Link></div>
 )
 const B = ()=>(
   <div className="display-1">B</div>
