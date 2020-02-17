@@ -5,11 +5,15 @@ import { mapStyles, bounceTransition } from "./mainRouterTransition";
 import { AnimatedSwitch } from "react-router-transition";
 import welcomeScreen from "./welcome/welcomeScreen";
 
-const B = () => <div className="display-1">B</div>;
+const B = () => (
+  <div className="display-1">
+    <Link to="/About/">B</Link>
+  </div>
+);
 const C = () => <div className="">C</div>;
 
 export default () => (
-  <Router >
+  <Router>
     <AnimatedSwitch
       atEnter={bounceTransition.atEnter}
       atLeave={bounceTransition.atLeave}
