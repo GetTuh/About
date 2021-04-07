@@ -1,1 +1,1 @@
-# [Strona o mnie](https://gettuh.github.io/About/)
+# [About me page](https://about-gettuh.vercel.app/)
