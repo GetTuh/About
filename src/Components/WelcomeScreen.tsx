@@ -5,17 +5,14 @@ import {
   Center,
   ScaleFade,
   useDisclosure,
-  IconButton,
+  Button,
 } from "@chakra-ui/react";
-import { ArrowDownIcon } from "@chakra-ui/icons";
+import { ArrowForwardIcon } from "@chakra-ui/icons";
 function WelcomeScreen() {
   useEffect(() => {
     onToggle();
-    console.log("mount");
   }, []);
-
   const { isOpen, onToggle } = useDisclosure();
-
   return (
     <div>
       <ScaleFade initialScale={0.9} in={isOpen}>
@@ -29,17 +26,12 @@ function WelcomeScreen() {
               className="welcomeText"
               m={2}
             >
-              Welcome
+              Hi!
             </Text>
-            <ScaleFade initialScale={0.3} in={isOpen}>
-              <Center>
-                <Text>Get to know Jakub.</Text>
-              </Center>
 
-              <Center m={4}>
-                <IconButton aria-label="arrowDown" icon={<ArrowDownIcon />} />
-              </Center>
-            </ScaleFade>
+            <Button>
+              Get to know Jakub <ArrowForwardIcon ml={1} />
+            </Button>
           </Box>
         </Center>
       </ScaleFade>
