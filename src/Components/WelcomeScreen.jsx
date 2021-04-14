@@ -11,6 +11,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 function WelcomeScreen() {
   useEffect(() => {
     onToggle();
+    // eslint-disable-next-line
   }, []);
   const dismount = () => {
     onToggle();
