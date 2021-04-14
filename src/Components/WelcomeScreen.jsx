@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import {
   Text,
   Box,
@@ -6,12 +6,16 @@ import {
   ScaleFade,
   useDisclosure,
   Button,
-} from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+} from '@chakra-ui/react';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 function WelcomeScreen() {
   useEffect(() => {
     onToggle();
   }, []);
+  const dismount = () => {
+    onToggle();
+    setTimeout(() => {}, 100);
+  };
   const { isOpen, onToggle } = useDisclosure();
   return (
     <div>
@@ -29,7 +33,7 @@ function WelcomeScreen() {
               Hi!
             </Text>
 
-            <Button>
+            <Button onClick={dismount}>
               Get to know Jakub <ArrowForwardIcon ml={1} />
             </Button>
           </Box>
