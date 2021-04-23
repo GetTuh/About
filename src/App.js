@@ -1,10 +1,11 @@
-import WelcomeScreen from './components/WelcomeScreen';
-import Connect4 from './layouts/Connect4'
+// import WelcomeScreen from './layouts/WelcomeScreen';
+import Connect4 from './layouts/Connect4';
+import { Flex } from '@chakra-ui/react';
 function App() {
   return (
-    <div>
-      <WelcomeScreen />
-    </div>
+    <Flex width="100%">
+      <Connect4 />
+    </Flex>
   );
 }
 
